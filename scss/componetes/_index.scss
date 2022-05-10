@@ -664,3 +664,84 @@ footer{
 .card{
     align-items: center;
 }
+
+@media (max-width: 1200px){
+  .imagen-platillo {
+    width: 25rem;
+    display: inline-block;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+    border: #000 2px solid;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 700px){
+  .maps{
+    width: 15rem;
+    height: 15rem;
+  }
+  .form {
+    width: 16rem;
+    height: 44rem;
+    background: #e6e6e6;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 40px -10px #000;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.imagen-platillo {
+  width: 20rem;
+  display: inline-block;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px;
+  border: #000 2px solid;
+  height: 15rem;
+}
+}
+
+@media (max-width: 400px){
+  .imagen-platillo {
+    width: 15rem;
+    display: inline-block;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+    border: #000 2px solid;
+    height: 10rem;
+  }
+}
+
+.email{
+padding-top: 4rem;
+}
+
+.cont{
+  text-align: center;
+}
+
+.h32{
+  color: #fff;
+  font-weight: 700;
+}
+
+.columns{
+
+}
