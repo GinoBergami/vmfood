@@ -22,6 +22,10 @@ body {
   font-family: 'open sans';
 }
 
+.description {
+  text-align: center;
+}
+
 .contenedor {
   padding: 60px 0;
   width: 90%;
