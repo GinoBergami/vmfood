@@ -1,3 +1,11 @@
+@import "_variables";
+
+@mixin size($w,$h) {
+  width: $w;
+  height: $h;
+  
+}
+
 .resolucion{
     width: 100%;
     text-align: center;
@@ -33,6 +41,11 @@ h1{
     color: #fff;
     text-decoration: none;
 }
+.h1_menu{
+  color: #ad5400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+}
 
 header{
     background-color: #b95a00;
@@ -52,10 +65,10 @@ header ul li a{
 }
 
 .titulo{
-    color: #b95a00;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
+    color:map-get($estilos_titulo, color );
+    font-size: map-get($estilos_titulo, font-size );
+    text-align: map-get($estilos_titulo, text-align );
+    margin-bottom: map-get($estilos_titulo, margin-bottom );
 }
 
 /* Header */
@@ -208,13 +221,13 @@ video{
     mix-blend-mode: overlay;
 }
 .form{
-    width: 340px;
-    height: 44rem;
+   @include size(320px,44rem );
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
     margin: calc(50vh - 220px) auto;
     padding: 20px 30px;
+    margin-top: 3rem;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
@@ -238,17 +251,20 @@ input:focus{
 }
 .button__contact:hover{background:#78788c;color:#fff}
 
-.button__contact{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
+.boton{
+  font-family:'Montserrat',sans-serif;
     border:2px solid #78788c;
-    background:0;color:#5a5a6e;
+    background:wheat;color:#5a5a6e;
     cursor:pointer;transition:all .3s;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.button__contact{
+    float:right;
+    margin:1.3rem 0 0.3rem;
+    @extend .boton
 }
 .div__contact{
     font-family: 'Oswald', sans-serif;
@@ -353,6 +369,7 @@ footer{
     background: #ad5400;
     padding: 60px 0 30px 0;
     margin: auto;
+    margin-top: 5rem;
 }
 
 .contenedor-footer{
@@ -679,6 +696,7 @@ footer{
 }
 
 @media (max-width: 700px){
+
   .maps{
     width: 15rem;
     height: 15rem;
@@ -712,6 +730,10 @@ footer{
   border: #000 2px solid;
   height: 15rem;
 }
+header ul li {
+  margin: 5px;
+}
+
 }
 
 @media (max-width: 400px){
@@ -726,6 +748,10 @@ footer{
     border: #000 2px solid;
     height: 10rem;
   }
+  header ul li {
+    margin: 5px;
+}
+
 }
 
 .email{
