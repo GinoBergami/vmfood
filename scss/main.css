@@ -139,6 +139,8 @@ header .textos-header {
 
 .maps {
   text-align: center;
+  border-radius: 3rem;
+  margin-top: 3rem;
 }
 
 /* about us */
@@ -169,8 +171,8 @@ header .textos-header {
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   padding: 2px;
   -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
@@ -180,8 +182,8 @@ header .textos-header {
 
 .contenido-textos p {
   padding: 0px 0px 15px;
-  font-weight: 300;
-  text-align: justify;
+  font-weight: 400;
+  text-align: center;
 }
 
 .barra {
@@ -202,18 +204,6 @@ header .textos-header {
   background-size: 30px;
   margin-bottom: 40px;
   text-align: center;
-}
-
-.icono1 {
-  background-image: url(../img/icono1.png);
-}
-
-.icono2 {
-  background-image: url(../img/icono2.png);
-}
-
-.icono3 {
-  background-image: url(../img/icono3.png);
 }
 
 .nav {
@@ -845,5 +835,42 @@ body {
 .h32 {
   color: #fff;
   font-weight: 700;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  -webkit-text-decoration: underline white 2px;
+          text-decoration: underline white 2px;
+}
+
+@media (max-width: 700px) {
+  .imagen_contacto {
+    width: 17rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .newsletter {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .imagen_contacto {
+    width: 14rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
